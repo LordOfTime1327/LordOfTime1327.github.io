@@ -1,0 +1,479 @@
+/* ПОЛЬЗОВАТЕЛЬСКИЕ СТИЛИ */
+*{
+	font-family: PTSans, Roboto, Arial, sans-serif;
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+.container{
+	flex-flow: column;
+	width: 960px;
+	margin: 0 auto;
+}
+h1 {font-size: 32px;
+	line-height: 1.8;}
+h2 {font-size: 24px;
+	line-height: 1.6}
+h3 {font-size: 19px;
+	line-height: 1.4;}
+h4 {font-size: 16px;
+	line-height: 1.2;}
+h5 {font-size: 13px;
+	line-height: 1.2;}
+h6 {font-size: 11px;
+	line-height: 1;}
+/* КОНЕЦ ПОЛЬЗОВАТЕЛЬСКИХ СТИЛЕЙ */
+
+/* ОБЩИЕ СТИЛИ*/
+.header, .times, .image img, .third_block .container,
+.fifth_block .container{
+	transform: skewY(5deg);
+}
+.container, .header, nav ul, .time, .time .time_days, 
+.sign_up, .triple_icon, .cubes, .past_events{
+	display: flex;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+button{
+	width: 200px;
+	height: 55px;
+	border: none;
+	border-radius: 15px;
+	background-color: #90d23d;
+	font-size: 18px;
+	color: #FFF;
+	margin-top: 40px;
+}
+/* КОНЕЦ ОБЩИХ СТИЛЕЙ */
+
+/*** ПЕРВЫЙ БЛОК ***/
+.first_block{
+	background: #564f4f;
+	transform: skewY(-5deg);
+	padding-top: 150px;
+	margin-top: -100px;
+}
+.header{
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	/*font-size: 40px;*/
+	z-index: 2;
+	margin-bottom: 120px;
+}
+.logo{
+	margin-right: auto;
+}
+nav ul{
+	list-style: none;
+	flex-flow: row nowrap;
+}
+nav ul li{
+	display: inline-block;
+	padding: 30px 0;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+nav ul li a{
+	color: #FFF;
+}
+nav ul li:not(:last-child){
+	margin-right: 35px;
+}
+
+/*.time{
+	flex-flow: column;
+	border: 2px solid #90d23d;
+	border-radius: 20px;
+	width: 85%;
+	margin: 0 auto;
+	margin-top: 150px;
+	box-sizing: content-box;
+	padding-bottom: 10px;
+	color: #FFF;
+}
+.time .clock{
+	flex: 1;
+	text-align: center;
+	font-size: 100px;
+}	
+.time .time_days{
+	font-family: "Times New Roman", Times, serif;
+	text-transform: uppercase;
+	font-size: 25px;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+.time_days p{
+	flex: 1;
+	text-align: center;
+}*/
+
+.times{
+	border: 2px solid #90d23d;
+	border-radius: 20px;
+	margin: 150px auto 0;
+	padding: 0 30px;
+}
+.times table{
+	text-align: center;
+	color: #fff;
+}
+.top{
+	font-size: 100px;
+	padding: 0 20px;
+}
+.bottom{
+	font-size: 25px;
+	padding: 0 0 10px;
+}
+
+.image{
+	margin-top: 135px;
+}
+.image img{
+	width: 160px;
+	position: relative;
+	margin-bottom: -10px;
+}
+.image img:not(:first-child){
+	margin-left: -50px;
+}
+.img1{z-index: 5;}
+.img2{z-index: 4;}
+.img3{z-index: 3;}
+.img4{z-index: 2;}
+.img5{z-index: 1;}
+
+/*** ВТОРОЙ БЛОК ***/
+.second_block{
+	color: #242424;
+}
+.sign_up{
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-top: -200px;
+	margin-bottom: 150px;
+	z-index: 1;
+}
+.welcome{
+	flex: 0 1 60%;
+	font-size: 14px;
+	padding-right: 50px;
+}
+.sign_up form{
+	flex: 0 1 40%;
+	background: #FFF;
+	box-shadow: 0 1px 2px rgba(35, 31, 32, 0.65);
+	padding: 15px 30px;
+}
+.sign_up form h1{
+	font-size: 30px;
+	padding-bottom: 10px;
+}
+.sign_up form input{
+	width: 100%;
+	height: 55px;
+	padding: 15px;
+	margin-bottom: 20px;
+	border: 1px solid #bebebe;
+	border-radius: 5px;
+	font-size: 20px;
+}
+.sign_up form input[name="username"]{
+	margin-bottom: 40px;
+}
+.sign_up form input[type="submit"]{
+	background-color: rgb(144, 210, 61);
+	color: #FFF;
+}
+.signup form input[type="submit"]:hover{
+	background-color: rgb(127, 186, 53); 
+}
+.signup form p{
+	font-size: 15px;
+	width: 205px;
+	margin: 0 auto;
+}
+.triple_icon{
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: baseline;
+	text-align: center;
+}
+.triple_icon div{
+	flex: 0 1 300px;
+	font-size: 14px;
+}
+.second_block table{
+	width: 100%;
+	font-size: 22px;
+	color: #FFF;
+	border-radius: 15px;
+	overflow: hidden;
+	vertical-align: middle;
+	margin-top: 100px;
+}
+.second_block table th, table td{
+	padding: 25px 0;
+}
+.second_block table tr td:first-child{
+	text-align: center;
+	padding: 0 50px;
+}
+.second_block table tr th:nth-child(2n){
+	text-align: left;
+}
+.second_block table tr:nth-child(even){
+	background-color: rgb(55, 55, 55);
+}
+.second_block table tr:nth-child(odd){
+	background-color: rgb(75, 77, 79);
+}
+.second_block table th{
+	font-size: 30px;
+	background-color: rgb(163, 204, 64);
+}
+.second_block table img{
+	padding-right: 50px;
+}
+.remember{
+	width: 90%;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 40px;
+	font-size: 14px;
+	font-weight: 300;
+}
+/*** ТРЕТИЙ БЛОК ***/
+.third_block{
+	transform: skewY(-5deg);
+	background: #564f4f;
+}
+.third_block .container{
+	flex-flow: row nowrap;
+	margin-top: 200px;
+}
+.envato_elite{
+	flex: 1;
+}
+.envato_elite img{
+	margin-top: -40%;
+}
+.text{
+	flex: 4;
+	text-align: right;
+	color: #FFF;
+	padding: 125px 0;
+}
+.text h1{
+	font-size: 50px;
+	padding-bottom: 40px;
+}
+
+/*** ЧЕТВЕРТЫЙ БЛОК ***/
+.fourth_block{
+	margin-top: 100px;
+}
+.fourth_text{
+	width: 70%;
+	color: #242424;
+	margin-bottom: 50px;
+}
+.cubes{
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin-bottom: 180px;
+}
+.cubes div:not(.star){
+	flex: 0 1 300px;
+	height: 300px;
+	background: rgb(144, 210, 61);
+	color: #FFF;
+	border-radius: 15px;
+	margin-bottom: 40px;
+}
+.cubes .info_cube{
+	flex-flow: column;
+	background: rgb(70, 195, 9);
+	padding: 30px;
+}
+.info_cube h1{
+	width: 50%;
+	font-size: 45px;
+	line-height: 1;
+	border-bottom: 6px solid #FFF;
+	margin-bottom: 15px;
+}
+.info_cube p{
+	font-size: 18px;
+	margin-bottom: 55px;
+}
+.cubes .star img{
+	padding: 35px;
+}
+
+/*** ПЯТЫЙ БЛОК ***/
+.fifth_block{
+	background: #564f4f;
+	transform: skewY(-5deg);
+	text-align: center;
+	padding: 100px 0;
+	color: #FFF;
+}
+.fifth_block h1{
+	font-size: 50px;
+}
+.fifth_block p{
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.sponsor_img img:not(:last-child){
+	margin-right: 85px;
+}
+
+ /*** ШЕСТОЙ БЛОК ***/
+.sixth_block{
+	margin-top: 100px;
+}
+.events_info{
+	width: 70%;
+	color: #242424;
+}
+.events_info h1{
+	font-size: 50px;
+}
+.events_info p{
+	font-size: 14px;
+	margin-bottom: 100px;
+}
+.past_events{
+	height: 750px;
+	flex-flow: row wrap;
+	margin-bottom: 100px;
+}
+.past_events div{
+	flex: 0 1 50%;
+}
+.blue{
+	background: blue;
+}
+.green{
+	background: green;
+}
+div .orange{
+	flex: 0 1 40%;
+	background: orange;
+}
+div .red{
+	flex: 0 1 60%;
+	background: red;
+}
+.sixth_block a{
+	display: block;
+	width: 200px;
+	margin: 0 auto;
+}
+.sixth_block button{
+	display: block;
+	background: rgb(55, 55, 55);
+	/*margin-bottom: 100px;*/
+}
+
+/*** СЕДЬМОЙ БЛОК ***/
+.sevens_block{
+	background: url(../images/map.png);
+	margin-top: 100px;
+	padding: 100px 0;
+}
+.sevens_block .container{
+	flex-flow: row nowrap;
+	align-items: center;
+	background: #FFF;
+	padding: 30px 0;
+}
+.map_info, form{
+	flex: 0 1 50%;
+}
+.map_info div{	
+	width: 250px;
+	margin: 0 auto;
+}
+.map_info img{
+	margin: 0 60px;
+	margin-bottom: 20px;
+}
+.map_info p{
+	width: 250px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.map_info button{
+	border: none;
+	box-shadow: none;
+	margin: 0 25px;
+}
+.sevens_block form{
+	background: #FFF;
+	padding: 15px 30px;
+	border: none;
+	box-shadow: none;
+}
+.sevens_block input[type="email"]{
+	width: 100%;
+	height: 55px;
+	padding: 15px;
+	font-size: 20px;
+	border: 1px solid #bebebe;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+.sevens_block textarea{
+	border: 1px solid #bebebe;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 15px;
+	margin-bottom: 20px;
+}
+.sevens_block form input[type="submit"]{	
+	width: 100%;
+	border: none;
+	border-radius: 5px;
+	padding: 20px 0;
+	background: rgb(55, 55, 55);
+	color: #FFF;
+	font-size: 20px;
+}
+
+ /*** ВОСЬМОЙ БЛОК ***/
+ .eight_block{
+ 	background: rgb(144, 210, 61);
+ 	padding-bottom: 50px;
+ }
+ .eight_block .container{
+ 	width: 400px;
+ 	margin: 0 auto;
+ 	text-align: center;
+ }
+ .networks{
+	padding: 50px 0;
+ }
+ .networks img{
+ 	width: 45px;
+ 	height: 45px;
+ }
+ .up{
+ 	position: absolute;
+ 	width: 30px;
+ 	height: 20px;
+ 	margin-left: 500px;
+ 	margin-top: -80px;
+ }

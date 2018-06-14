@@ -1,0 +1,193 @@
+/*ПОЛЬЗОВАТЕЛЬСКИЕ СКТИЛИ*/
+*{
+	font-family: 'Roboto' ,Arial, sans-serif;
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+.container{
+	flex-flow: column;
+	width: 960px;
+	margin: 0 auto;
+}
+h1 {font-size: 32px;
+	line-height: 1.8;}
+h2 {font-size: 24px;
+	line-height: 1.6}
+h3 {font-size: 19px;
+	line-height: 1.4;}
+h4 {font-size: 16px;
+	line-height: 1.2;}
+h5 {font-size: 13px;
+	line-height: 1.2;}
+h6 {font-size: 11px;
+	line-height: 1;}
+/*КОНЕЦ ПОЛЬЗОВАТЕЛЬСКИХ СТИЛЕЙ*/
+
+/*ОБЩИЕ СТИЛИ*/
+.container, .gallery, .flex_gallery{
+	display: flex;
+}
+/*КОНЕЦ ОБЩИХ СТИЛЕЙ*/
+
+/*ПЕРВЫЙ БЛОК*/
+header{
+	background-image: url(../images/forest.jpg);
+	padding-top: 50px;
+	color: #fff;
+}
+.tourism{
+	font-size: 21px;
+	padding-bottom: 200px;
+	text-align: center;	
+}
+.headline{
+	width: 500px;
+	padding-bottom: 250px;
+}
+.headline h1{
+	font-size: 50px;
+	line-height: 1;
+	padding-bottom: 20px;
+}
+.headline h4{
+	color: #ccc;
+	line-height: 1;
+}
+.headline p{
+	font-size: 14px;
+}
+/*КОНЕЦ ПЕРВОГО БЛОКА*/
+
+/*ВТОРОЙ БЛОК*/
+.gallery .container{
+	flex-flow: row nowrap;
+	align-items: stretch;
+}
+.flex_gallery{
+	flex: 0 1 700px;
+	display: flex;
+	flex-flow: row wrap;
+}
+.text{
+	flex: 0 1 75%;
+	font-size: 14px;
+	padding-top: 66px;
+	padding-bottom: 56px;
+}
+.text:first-child{
+	flex: 0 1 25%;
+	font-size: 30px;
+}
+.img_7{
+	margin-top: -75px;
+	padding-left: 30px;
+}
+.images{
+	flex: 0 2 100%;
+	padding-top: 600px;
+	position: relative;
+}
+.images img{
+	position: absolute;
+}
+.img_1{
+	top: 0;
+	left: 0;
+}
+.img_2{
+	top: 0; 
+	left: 300px;
+}
+.img_3{
+	top: 202px;
+	left: 0;
+}
+.img_4{
+	top: 265px;
+	left: 300px;
+}
+.img_5{
+	top: 375px;
+	left: 300px;
+}
+.img_6{
+	top: 265px;
+	left: 480px;
+}
+/*КОНЕЦ ВТОРОГО БЛОКА*/
+
+/*ТРЕТИЙ БЛОК*/
+.third_block{
+	background: url(../images/lorem.jpg) no-repeat;
+	color: #fff;
+	text-align: center;
+	padding-top: 82px;
+}
+.caption{
+	margin: 0 auto;
+	font-size: 23px;
+	font-weight: 300;
+	padding: 10px 20px;
+	border: 1px solid #fff;
+}
+.lorem{
+	width: 65%;
+	margin: 0 auto;
+	padding-top: 30px;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 26px;
+	letter-spacing: 0.52px;
+	margin-bottom: 82px;
+}
+/*КОНЕЦ ТРЕТЕГО БЛОКА*/
+
+/*ЧЕТВЕТЫЙ БЛОК*/
+.stat{
+	padding: 75px 0 130px 0;
+}
+.stat p{
+	font-size: 30px;
+	font-weight: 300;
+	padding-bottom: 20px;
+}
+.stat p:first-child{
+	margin: 0 auto;
+}
+.stat p:last-of-type{
+	font-size: 14px;
+	line-height: 25px;
+	letter-spacing: .56px;
+	padding-bottom: 30px;
+}
+table{
+	background-color: #f5f5f5;
+	text-align: center;
+}
+.top{
+	padding-top: 15px;
+}
+.bottom{
+	padding-bottom: 15px;
+}
+table tr:first-child{
+	font-size: 28px;
+	font-weight: 500;
+}
+table tr:last-child{
+	font-size: 17px;
+	font-weight: 400;
+}
+/*КОНЕЦ ЧЕТВЕРТЫЙ БЛОК*/
+
+/*ПЯТЫЙ БЛОК*/
+footer{
+	background: url(../images/footer.jpg) no-repeat;
+	color: #fff;
+	text-align: center;
+	padding-top: 120px;
+}
+footer .tourism{
+	padding: 100px 0 50px 0;
+}
+/*КОНЕЦ ПЯТОГО БЛОКА*/
