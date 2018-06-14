@@ -25,8 +25,8 @@ h6 {font-size: 11px;
 
 /* Верхняя часть */
 header{
-	/*background: rgb(252, 219, 0);*/
-	background: red;
+	background: rgb(252, 219, 0);
+	/*background: red;*/
 	padding-top: 70px;
 }
 .container{
