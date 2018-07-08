@@ -1,6 +1,10 @@
+*{
+    box-sizing: border-box;
+}
 body{
-    width: 600px;
-    margin: 70px auto 0;
+    width: 50%;
+    padding: 20px 20px;
+    margin: 20px auto 0;
     text-align: center;
     font-family: Arial, sans-serif;
     font-size: 1.3em;
@@ -11,8 +15,8 @@ body{
     margin-bottom: 0;
 }
 .circle{
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     margin: 0 auto;
     border-radius: 50%;
     background-color: #000;
@@ -31,10 +35,50 @@ body{
     margin: 0 auto;
     background-color: #fff;
     color: #000;
-    text-align: center;
+    font-size: 1.2em;
     border-radius: 50%;
     position: absolute;
-    top: 100px;
-    left: 250px;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
     border: 2px solid #ccc;
+}
+@media (min-width: 601px) and (max-width: 800px) {
+    body{
+        font-size: 1.15em;
+    }
+    .arrow p{
+        font-size: 40px;
+    }
+    .circle{
+        width: 250px;
+        height: 250px;
+    }
+    .button{
+        font-size: 1em;
+        width: 76px;
+        height: 76px;
+        margin-top: -38px;
+        margin-left: -38px;
+    }
+}
+@media (max-width: 600px) {
+    body{
+        font-size: 1em;
+    }
+    .arrow p{
+        font-size: 30px;
+    }
+    .circle{
+        width: 200px;
+        height: 200px;
+    }
+    .button{
+        font-size: .8em;
+        width: 60px;
+        height: 60px;
+        margin-top: -30px;
+        margin-left: -30px;
+    }
 }
