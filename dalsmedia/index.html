@@ -3,103 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Test for DALS Media</title>
-
-    <script>
-        function startTimer() {
-            var timer = document.getElementById("timer");
-            var time = timer.innerHTML;
-            var arr = time.split(":");
-            var min = arr[0];
-            var sec = arr[1];
-            if (sec==0){
-                if (min==0){
-                    alert("Time is out");
-                    return;
-                }
-                min--;
-                sec = 59;
-            }
-            else sec--;
-            if (sec<10) sec = "0"+sec;
-            document.getElementById("timer").innerHTML = min+":"+sec;
-            setTimeout(startTimer, 1000);
-        }
-        
-        // document.getElementsByClassName('circle')[0].addEventListener('click', function (e) {
-        //     e.target.style.transform = 'rotate('+Math.random()*1000+'rad)';
-        //     return false;
-        // });
-
-        function timer(a) {
-            return {
-                play: function(c) {
-                    var d = performance.now();
-                    c = c || a.to;
-                    requestAnimationFrame(function e(b) {
-                        b = (b - d) / a.duration;
-                        1 <= b && (b = 1);
-                        a.elem.style.transform = "rotate(" + (a.from + (c - a.from) * b | 0) % 360 + "deg)";
-                        1 == b && a.callback && a.callback();
-                        1 > b && requestAnimationFrame(e)
-                    })
-                }
-            }
-        };
-        var div = document.querySelector('.game-roulette-numbers'),
-            but = document.querySelector('#go'),
-            num = 0;
-        anim = timer({
-            from: 0,
-            to: 360 * 3 + 120,
-            duration: 2 * 1000,
-            elem: div,
-            callback: function() {
-                alert(num)
-            }
-        });
-
-
-        but.addEventListener('mousedown', function() {
-            var n = (15 * Math.random() | 0);
-            num = [4, 10, 3, 9, 2, 8, 1, 0, 14, 7, 13, 6, 12, 5, 11][n];
-            anim.play(360 * 3 + n * 24) //задать нужный угол поворота
-        });
-    </script>
-
-    <style>
-        body{
-            width: 1000px;
-            margin: 0 auto;
-        }
-        .arrow p{
-            text-align: center;
-        }
-        /*.circle{*/
-            /*width: 500px;*/
-            /*height: 500px;*/
-            /*margin: 0 auto;*/
-            /*border-radius: 50%;*/
-            /*background-color: #000;*/
-            /*background-image: url("wheel.jpg");*/
-            /*background-position: center;*/
-            /*background-size: cover;*/
-            /*transition: 2s;*/
-            /*transition-timing-function: ease-in-out;*/
-        /*}*/
-        .game-roulette-numbers {
-            background-image: url(http://i.imgur.com/b2Uj84T.png);
-            width: 339px;
-            height: 339px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
-
 <body onload="startTimer()">
-    <span id="timer">2:01</span>
+    <p class="text">Spin the wheel</p>
+    <p class="text">Countdown Timer <span id="timer">2:01</span> min</p>
     <div class="arrow"><p>▼</p></div>
-    <!--<div class="circle"></div>-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <div class="game-roulette-numbers"></div>
-    <input id="go" name="" type="button" value="go">
+    <div class="wheel">
+        <div class="circle"></div>
+        <input class="button" type="button" name="button" value="SPIN" onclick="button()">
+    </div>
 </body>
 </html>
