@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Test for Lagoteam</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+	<div class="main">
+		<div class="left">
+			<h1>Hello, stranger</h1>
+			<div class="underline"></div>
+			<p class="leftP">In our portal you can handle all your project in the easiest of possible ways, and keep it under your total control.</p>
+		</div>
+		<div class="right">
+			<h2>Registration</h2>
+			<p class="rightP">Fill all fields below</p>
+			<form id="form" action="new.html" method="GET">
+				<p class="hidden" id="visible1">Type here your email</p>
+				<input type="email" name="email" placeholder="Enter your Email" id="email" required="" onfocus="clickme1(this)" onblur="blur1(this)"><br>	
+				<p class="hidden" id="visible2">Type here your password</p>
+				<input id="password" pattern="(*[?!@%]?=.*[0-9])(?=.*[a-z])[?!@%0-9a-z].{8,}" type="password" placeholder="Enter your password" required="" onfocus="clickme2(this)" onblur="blur2(this)"><br>	
+				<button type="submit"><img src="padlock.png" alt="padlock" class="padlock">Create account</button>
+				<p class="lastP">By signing up I accept with <a href="#">Terms and Conditions</a></p>
+			</form>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>
