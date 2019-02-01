@@ -180,7 +180,7 @@ ul.accordion li:nth-child(6):hover{
 	width: 600px !important;
 	height: 150px;
 	margin: 0 auto;
-	/*padding: 0 150px !important;*/
+	padding: 0 150px !important;
 }
 .feedback_block p{
 	max-width: 600px;
@@ -206,4 +206,8 @@ ul.accordion li:nth-child(6):hover{
 .slick-slide{
 	text-align: center;
 	margin: 0 50px;
+}
+.slick-slider{
+	/*padding: 10px 0;*/
+	margin: 0;
 }
