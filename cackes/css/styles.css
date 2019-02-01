@@ -177,9 +177,10 @@ ul.accordion li:nth-child(6):hover{
 
 .feedback_block{
 	position: relative;
-	width: 600px;
+	width: 600px !important;
 	height: 150px;
-	margin: 0 auto; 
+	margin: 0 auto;
+	padding: 0 150px;
 }
 .feedback_block p{
 	max-width: 600px;
