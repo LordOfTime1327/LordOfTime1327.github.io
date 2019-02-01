@@ -187,7 +187,7 @@ ul.accordion li:nth-child(6):hover{
 	height: 150px;
 	border-radius: 75px;
 	box-shadow: inset 0 0 20px rgba(0, 0, 0, .5);
-	margin: 0 150px;
+	margin: 0 150px !important;
 	padding: 15px 50px 15px 175px;
 	color: #000;
 	position: absolute;
@@ -204,5 +204,5 @@ ul.accordion li:nth-child(6):hover{
 	z-index: 1;
 }
 .slick-slider{
-	margin: 0 150px;
+	margin: 0 150px 10px;
 }
