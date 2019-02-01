@@ -203,6 +203,9 @@ ul.accordion li:nth-child(6):hover{
 	top: 0;
 	z-index: 1;
 }
+.slick-slider{
+	background: green;
+}
 .slick-slide{
 	background: red;
 	margin: 10px 50px;
