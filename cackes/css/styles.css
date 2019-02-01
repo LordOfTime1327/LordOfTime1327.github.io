@@ -209,5 +209,5 @@ ul.accordion li:nth-child(6):hover{
 .slick-slide{
 	background: red;
 	margin: 10px 50px;
-	padding: 0 50px;
+	padding: 0;
 }
