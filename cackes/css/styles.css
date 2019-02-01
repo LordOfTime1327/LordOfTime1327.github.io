@@ -178,13 +178,13 @@ ul.accordion li:nth-child(6):hover{
 .feedback_block{
 	position: relative;
 	width: 600px !important;
-	height: 150px;
+	/*height: 150px;*/
 	margin: 0 auto;
 	padding: 0 150px !important;
 }
 .feedback_block p{
 	max-width: 600px;
-	height: 150px;
+	/*height: 150px;*/
 	border-radius: 75px;
 	box-shadow: inset 0 0 20px rgba(0, 0, 0, .5);
 	/*margin: 0 150px !important;*/
