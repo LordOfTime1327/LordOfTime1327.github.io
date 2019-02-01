@@ -182,6 +182,7 @@ ul.accordion li:nth-child(6):hover{
 	margin: 0 auto;
 }
 .feedback_block p{
+	width: 600px;
 	height: 150px;
 	border-radius: 75px;
 	box-shadow: inset 0 0 20px rgba(0, 0, 0, .5);
