@@ -126,7 +126,38 @@
 	<script type="text/javascript">
 	    $(document).ready(function(){
 	      $('.feedback').slick({
-	        $('.single-item').slick();
+				    autoplay: true,
+				    autoplaySpeed: 2000,
+				    speed: 1500,
+				    cssEase: 'ease-in-out',
+				    centerMode: true,
+				    dots: true,
+				    pauseOnDotsHover: true,
+				    lazyLoad: 'progressive',
+				    responsive: [
+				        {
+				            breakpoint: 1024,
+				            settings: {
+				                infinite:true,
+				                arrows: false
+				            }
+				        },
+				        {
+				            breakpoint: 600,
+				            settings: {
+				                infinite: true,
+				                arrows: false
+				            }
+				        },
+				        {
+				            breakpoint: 480,
+				            settings: {
+				                infinite: true,
+				                arrows: false
+				            }
+				        }
+				    ]
+				});
 	      });
 	    });
   	</script>
