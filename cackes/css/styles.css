@@ -205,6 +205,7 @@ ul.accordion li:nth-child(6):hover{
 }
 .slick-slider{
 	background: green;
+	text-align: center;
 }
 .slick-slide{
 	background: red;
