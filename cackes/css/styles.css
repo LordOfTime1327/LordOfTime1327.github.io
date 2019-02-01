@@ -200,3 +200,7 @@ ul.accordion li:nth-child(6):hover{
 	left: 0;
 	top: 0;
 }
+
+.slick-list{
+	width: 600px;
+}
