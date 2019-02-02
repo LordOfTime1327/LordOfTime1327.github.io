@@ -99,6 +99,50 @@ main .container{
 	height: 180px;
 }
 
+/*.zakaz_link{
+	display: block;
+	width: 300px;
+	padding: 20px;
+	margin: 60px auto 0;
+	border: 3px solid transparent;
+	border-image: linear-gradient(to bottom right, #5353fe, #9209d2);
+	border-image-slice: 1;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	background: -webkit-linear-gradient(left, #5353fe, #9209d2);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: rgb(173, 34, 238);
+}*/
+
+.link{
+	display: block;
+	width: 300px;
+	margin: 50px auto 0;
+	padding: 3px;
+	text-align: center;
+	border-radius: 50px;
+	background: -webkit-linear-gradient(left, #5353fe, #9209d2);
+}
+.link div{
+	background: #fff;
+	margin: 0;
+	border-radius: 50px;
+}
+.link .zakaz{
+	margin: 0;
+	padding: 20px;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+	background: #fff;
+	background: -webkit-linear-gradient(right, #9209d2, #5353fe);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 .caption{
 	color: #000;
 	font-size: 32px;
