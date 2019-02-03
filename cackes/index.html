@@ -9,6 +9,7 @@
 	<link rel="shortcut icon" href="img/icon.ico" type="image/x-icon"><link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -31,7 +32,11 @@
 	<main>
 		<div class="container">
 			<!-- баннер реклам и предлоэжений -->
-			<article class="banner_block"></article>
+			<article class="banner_block">
+			    <img src="img/banner-1.jpg" alt=""/>
+				<img src="img/banner-2.jpg" alt=""/>
+				<img src="img/banner-3.jpg" alt=""/>
+			</article>
 
 			<article class="new_block">
 				<img src="img/new.png" alt="new" class="new">
@@ -134,6 +139,20 @@
 				    slidesToShow: 1,
 				    centerPadding: '0px',
 				    dots: true,
+				    pauseOnDotsHover: true,
+				    lazyLoad: 'progressive',
+				    arrows: false
+				});
+
+	      $('.banner_block').slick({
+				    autoplay: true,
+				    autoplaySpeed: 2000,
+				    speed: 1500,
+				    cssEase: 'ease-in-out',
+				    centerMode: true,
+				    slidesToShow: 1,
+				    centerPadding: '0px',
+				    dots: false,
 				    pauseOnDotsHover: true,
 				    lazyLoad: 'progressive',
 				    arrows: false
