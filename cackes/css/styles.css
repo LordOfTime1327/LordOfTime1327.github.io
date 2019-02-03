@@ -90,6 +90,12 @@ main .container{
 	padding-top: 100px;
 	color: #fff;
 }
+
+.banner_block{
+	margin: 20px auto 50px;
+	width: 100%;
+}
+
 .new_block, .top_block{
 	display: flex;
 	flex-flow: row nowrap;
