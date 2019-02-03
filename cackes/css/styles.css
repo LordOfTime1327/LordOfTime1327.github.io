@@ -262,7 +262,7 @@ ul.accordion li:nth-child(6):hover{
 	top: 0;
 	z-index: 1;
 }
-.feedback .slick-slide{
+.slick-slide{
 	margin: 0 150px;
 	padding: 0;
 }
