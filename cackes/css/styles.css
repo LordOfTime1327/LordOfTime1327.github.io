@@ -266,3 +266,6 @@ ul.accordion li:nth-child(6):hover{
 	margin: 0 150px;
 	padding: 0;
 }
+.banner_block .slick-slide{
+	margin: 0 auto;
+}
