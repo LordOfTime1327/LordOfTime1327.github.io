@@ -293,8 +293,14 @@ ul.accordion li:nth-child(6):hover{
 	height: 100px;
 }
 
-.order{
+.order form{
 	display: flex;
-	flex-flow: row;
+	flex-flow: row wrap;
 	margin: 0 50px;
 }
+form input{
+	flex: 0 1 50%;
+}
+/*form input[type="submit"]{
+	display: block;
+}*/
