@@ -267,7 +267,8 @@ ul.accordion li:nth-child(6):hover{
 	padding: 0;
 }
 .banner_block .slick-slide{
-	margin: 0 auto;
+	margin: 0 20px;
+	padding: 0;
 }
 
 .dostavka_block{
