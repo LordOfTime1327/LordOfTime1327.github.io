@@ -267,7 +267,7 @@ ul.accordion li:nth-child(6):hover{
 	padding: 0;
 }
 .banner_block .slick-slide{
-	margin: 0 20px;
+	margin: 0 0px;
 	padding: 0;
 }
 
@@ -291,4 +291,10 @@ ul.accordion li:nth-child(6):hover{
 .oplata-list img{
 	width: 100px;
 	height: 100px;
+}
+
+.order{
+	display: flex;
+	flex-flow: row;
+	margin: 0 50px;
 }
