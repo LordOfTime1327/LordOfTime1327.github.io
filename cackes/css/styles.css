@@ -269,3 +269,25 @@ ul.accordion li:nth-child(6):hover{
 .banner_block .slick-slide{
 	margin: 0 auto;
 }
+
+.dostavka_block{
+	margin: 0 80px 50px;
+	color: #000;
+	text-align: center;
+}
+.dostavka, .oplata{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+.dostavka img,
+.oplata img{
+	width: 100px;
+	height: 100px;
+}
+.dostavka-list,
+.oplata-list{
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}

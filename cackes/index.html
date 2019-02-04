@@ -21,7 +21,7 @@
 				<ul class="menu__item">
 					<li class="menu__list"><a href="#">Топ/Новинки</a></li>
 					<li class="menu__list"><a href="#">Галерея</a></li>
-					<li class="menu__list"><a href="#">Отзывы</a></li>
+					<li class="menu__list"><a href="#">Доставка</a></li>
 					<li class="menu__list"><a href="#">Заказать</a></li>
 					<li class="menu__list"><a href="#">Контакты</a></li>
 				</ul>
@@ -56,7 +56,7 @@
 
 			<!-- слайдер аккордеон -->
 			<article class="gallery">
-				<p class="caption">Галерея</p>
+				<h2 class="caption">Галерея</h2>
 				<div class="row">
 					<img src="img/lol.jpg" alt="">
 					<img src="img/lol.jpg" alt="">
@@ -87,8 +87,9 @@
 			</article>
 
 			<!-- отзывы слайдер -->
-			<p class="caption">Отзывы клиентов</p>
+			
 			<article class="feedback">
+				<h2 class="caption">Отзывы клиентов</h2>
 				<div class="feedback_block">
 					<p><img src="img/face1.png" alt=""><i><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deserunt in ut expedita numquam delectus veniam, magnam ullam aliquid deleniti asperiores aut provident, cum nobis exercitationem iste fugit repellendus beatae?</q><br><br>- Anna</i></p>
 				</div>
@@ -100,9 +101,36 @@
 				</div>
 			</article>
 
-			<!-- оформление заказа -->
-			<article class="order">
-				<p class="caption">Оформление заказа</p>
+			
+			
+			<article class="dostavka_block">
+				<h2 class="caption">Доставка и оплата</h2>
+				<p class="dostavka_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis iure porro et qui expedita illum, assumenda quidem odio, beatae hic.</p>
+				<div class="dostavka">
+					<div class="dostavka-list">
+						<img src="img/samovivoz.png" alt="">
+						<p>Самовывоз с пункта выдачи</p>
+					</div>
+					<div class="dostavka-list">
+						<img src="img/dostavka.png" alt="">
+						<p>Доставка почтой и по городу</p>
+					</div>
+				</div>
+				<p class="oplata_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis iure porro et qui expedita illum, assumenda quidem odio, beatae hic.</p>
+				<div class="oplata">
+					<div class="oplata-list">
+						<img src="img/nalom.png" alt="">
+						<p>Оплата наличными</p>
+					</div>
+					<div class="oplata-list">
+						<img src="img/karta.png" alt="">
+						<p>Перевод денег на карту</p>
+					</div>
+					<div class="oplata-list">
+						<img src="img/online-pay.png" alt="">
+						<p>Онлайн платеж</p>
+					</div>
+				</div>
 			</article>
 
 			<!-- баннер реклам и предлоэжений -->
@@ -110,6 +138,19 @@
 			    <img src="img/banner-1.jpg" alt=""/>
 				<img src="img/banner-2.jpg" alt=""/>
 				<img src="img/banner-3.jpg" alt=""/>
+			</article>
+
+			<!-- оформление заказа -->
+			<article class="order">
+				<h2 class="caption">Оформление заказа</h2>
+				<form action="D:/Web/Projects/cackes/new.txt" method="post">
+					<input type="text">
+					<input type="text">
+					<input type="tel">
+					<input type="email">
+					<textarea></textarea>
+					<input type="submit">
+				</form>
 			</article>
 		</div>
 	</main>
@@ -154,7 +195,7 @@
 				    cssEase: 'ease-in-out',
 				    centerMode: true,
 				    slidesToShow: 1,
-				    centerPadding: '20px',
+				    centerPadding: '0px',
 				    dots: false,
 				    pauseOnDotsHover: true,
 				    lazyLoad: 'progressive',
