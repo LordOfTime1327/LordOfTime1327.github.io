@@ -280,14 +280,14 @@ ul.accordion li:nth-child(6):hover{
 	flex-flow: row nowrap;
 	justify-content: space-around;
 }
-.dostavka img,
-.oplata img{
-	width: 100px;
-	height: 100px;
-}
 .dostavka-list,
 .oplata-list{
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
+}
+.dostavka-list img,
+.oplata-list img{
+	width: 100px;
+	height: 100px;
 }
