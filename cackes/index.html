@@ -143,15 +143,16 @@
 			<h2 class="caption">Оформление заказа</h2>
 			<article class="order">
 				<form action="" method="post">
-					<input type="text" placeholder="First Name">
-					<input type="text" placeholder="Last Name">
-					<input type="tel" placeholder="Telephone Number">
-					<input type="email" placeholder="Email">
-					<textarea placeholder="Message"></textarea>
-					<input type="submit">
+					<input type="text" placeholder="First Name" required="">
+					<input type="text" placeholder="Last Name" required="">
+					<input type="tel" placeholder="Phone +380123456789" pattern="[\+]\d{12}" required="">
+					<input type="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required="">
+					<textarea rows="1" placeholder="Message"></textarea>
+					<button type="submit" class="link"><div><p class="zakaz">Заказать</p></div></button>
 				</form>
 			</article>
 		</div>
+
 	</main>
 	<footer>
 		<div class="container">

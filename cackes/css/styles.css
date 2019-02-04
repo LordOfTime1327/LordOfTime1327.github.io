@@ -159,6 +159,9 @@ main .container{
 	font-weight: bold;
 	text-align: center;
 	padding: 40px 0 20px;
+	background: -webkit-linear-gradient(right, #9209d2, #5353fe);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .row{
@@ -263,7 +266,7 @@ ul.accordion li:nth-child(6):hover{
 	z-index: 1;
 }
 .slick-slide{
-	margin: 0 150px;
+	margin: 0 100px;
 	padding: 0;
 }
 .banner_block .slick-slide{
@@ -296,11 +299,28 @@ ul.accordion li:nth-child(6):hover{
 .order form{
 	display: flex;
 	flex-flow: row wrap;
-	margin: 0 50px;
+	justify-content: space-between;
+	margin: 0 50px 50px;
+}
+form input,
+form textarea{
+	padding: 7px;
+	margin-bottom: 2%;
+	border: none;
+	border-bottom: 2px solid;
+	border-image: -webkit-linear-gradient(right, #9209d2, #5353fe);
+    border-image-slice: 1;
 }
 form input{
-	flex: 0 1 50%;
+	flex: 0 1 49%;
 }
-/*form input[type="submit"]{
+form textarea{
+	flex: 0 1 100%;
+}
+form .link{
+	flex: 0 1 300px;
 	display: block;
-}*/
+	text-align: center;
+	margin: 0 auto;
+	border: none;
+}
