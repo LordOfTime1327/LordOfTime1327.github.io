@@ -20,6 +20,11 @@ a{
 	text-decoration: none;
 	color: rgb(0, 0, 0);
 }
+a[name=""]{
+	padding-top: 70px;
+	margin-top: 70px;
+}
+
 /**** Шапка ****/
 header{
 	background: rgb(255, 255, 255);
@@ -401,6 +406,7 @@ footer{
 	align-items: center;
 	padding-top: 15px;
 	background: -webkit-linear-gradient(top, #fff, #c5c5c5);
+	width: 100%;
 }
 .footer-logo{
 	display: block;
