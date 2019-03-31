@@ -1,0 +1,15 @@
+@function rem($target) {
+  @return ($target / $baseFontSize) * 1rem;
+}
+
+@mixin e($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+@mixin m($modifier) {
+  &_#{$modifier} {
+    @content;
+  }
+}

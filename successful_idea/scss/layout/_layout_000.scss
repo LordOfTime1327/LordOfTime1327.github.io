@@ -1,0 +1,96 @@
+//header
+.header {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)),
+    url("../img/car.jpg") no-repeat;
+  background-position: center;
+  @include display(flex);
+  @include flex-basis(100%);
+
+  padding: 45px;
+
+  @include e(text) {
+    @include display(flex);
+    @include flex-direction(column);
+  }
+
+  @include e(title) {
+    margin: 0;
+    font-size: rem(30px);
+    font-weight: $mediumFontWeight;
+    text-transform: uppercase;
+  }
+
+  @include e(link) {
+    color: $white;
+
+    // transition: all 2s ease-in-out;
+  }
+
+  @include e(date) {
+    @include order(-1);
+    color: #99968f;
+    text-transform: uppercase;
+  }
+} //header
+
+//article
+.article {
+  position: relative;
+  background: $white;
+
+  @include display(flex);
+  @include flex-direction(column);
+
+  @include flex-basis(100%);
+
+  @include e(img) {
+    @include order(-1);
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  @include e(title) {
+    font-size: rem(22px);
+    font-weight: $mediumFontWeight;
+    text-transform: uppercase;
+    padding: 0 30px;
+    margin-bottom: 125px;
+  }
+
+  @include e(link) {
+    color: $titleText;
+  }
+
+  @include e(date) {
+    @include order(-1);
+    padding: 0 30px;
+    text-transform: uppercase;
+  }
+
+  @include e(author) {
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    width: 54px;
+  }
+} //article
+
+.loader {
+  @include display(flex);
+  justify-content: center;
+  @include align-items(center);
+  flex: 1;
+
+  margin-top: 80px;
+  margin-bottom: 100px;
+
+  @include e(img) {
+    margin-right: 15px;
+  }
+  @include e(text) {
+    text-transform: uppercase;
+    font-size: rem(13px);
+    color: #99a5b0;
+  }
+}

@@ -1,0 +1,13 @@
+@media (min-width: 640px) {
+  .container {
+    @include flex-direction(row);
+    @include justify-content(space-between);
+  }
+  .header {
+    margin-bottom: 20px;
+  }
+  .article {
+    @include flex-basis(calc(50% - 10px));
+    margin-bottom: 20px;
+  }
+}

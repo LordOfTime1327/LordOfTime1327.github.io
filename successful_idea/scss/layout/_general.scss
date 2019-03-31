@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: $baseFontFamily;
+  font-size: rem($baseFontSize);
+  background: #e2e7ec;
+}
+.container {
+  max-width: 1120px;
+  margin: auto;
+
+  @include display(flex);
+  @include flex-wrap(wrap);
+}
+.link {
+  text-decoration: none;
+}
+.date {
+  font-size: rem(13px);
+  color: $grey;
+  margin-bottom: 20px;
+}

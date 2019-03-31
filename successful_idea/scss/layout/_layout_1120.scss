@@ -1,0 +1,33 @@
+@media (min-width: 1120px) {
+  .container {
+    @include flex-direction(row);
+    margin-top: 90px;
+  }
+  .header {
+    @include flex-basis(740px);
+    position: relative;
+
+    @include e(text) {
+      position: absolute;
+      left: 40px;
+      bottom: 40px;
+    }
+
+    @include e(title) {
+      transition: all 1s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .article {
+    @include flex-basis(360px);
+
+    @include e(title) {
+      transition: all 1s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
