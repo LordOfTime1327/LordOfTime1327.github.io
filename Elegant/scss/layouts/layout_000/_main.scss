@@ -1,0 +1,53 @@
+.container_main {
+  padding: 110px 0;
+}
+
+.services {
+  @include display(flex);
+}
+
+.services-title {
+  font-family: $Raleway;
+  font-weight: $boldFontWeight;
+  margin-bottom: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: rem(35px);
+
+  &::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background: $black;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+}
+
+.services-items {
+  @include display(flex);
+  @include flex-direction(column);
+  @include align-items(center);
+  margin: 0 30px;
+
+  @include e(img) {
+    order: -1;
+    margin-bottom: auto;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  @include e(title) {
+    font-family: $Lato;
+    padding-top: 30px;
+    margin-top: 0;
+  }
+
+  @include e(content) {
+    font-family: $Lato;
+    text-align: center;
+  }
+}

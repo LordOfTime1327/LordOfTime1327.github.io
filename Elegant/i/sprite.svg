@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 0; height: 0; visibility: hidden; position: absolute;" aria-hidden="true"><symbol  viewBox='0 0 100 100' id='check'>
+    <circle r="50" cx="50" cy="50" fill="#005494"></circle><path fill="none" stroke="#fff" stroke-width="4" d="M25 50l25 25 25-40"></path>
+  </symbol><symbol  viewBox='0 0 100 100' id='gadgets'>
+    <path fill="#005494" d="M10 0h80v60H10z"></path><path fill="#fff" d="M15 5h70v50H15z"></path><path fill="#005494" d="M25 63h50v7H25z"></path><path fill="#fff" d="M30 65h40v3H30z"></path><path fill="#005494" d="M0 30h50v70H0z"></path><path fill="#fff" d="M5 35h40v55H5z"></path><circle r="3" cx="25" cy="95" fill="#fff"></circle><path fill="#005494" d="M60 35h40v60H60z"></path><path fill="#fff" d="M65 45h30v40H65z"></path><rect width="20" height="1" x="70" y="41" rx="1" fill="#fff"></rect><circle r="1" cx="80" cy="39" fill="#fff"></circle><circle r="2" cx="80" cy="90" fill="#fff"></circle>
+  </symbol><symbol  viewBox='0 0 50 100' id='iphone'>
+    <rect width="50" height="100" rx="5" ry="5" fill="#005494"></rect><rect width="20" height="3" rx="2" x="15" y="5" fill="#fff"></rect><path fill="#fff" d="M5 15h40v60H5z"></path><circle r="5" cx="25" cy="87" fill="#fff"></circle>
+  </symbol></svg>

@@ -1,0 +1,51 @@
+.container-banner {
+  background: url(#{$imagesPath}bg-third.png) no-repeat;
+  background-size: cover;
+}
+
+.banner {
+  @include display(flex);
+
+  @include e(info) {
+    flex: 0 0 50%;
+  }
+
+  @include e(title) {
+    font-family: $Lato;
+    font-size: rem(45px);
+    color: $white;
+    text-transform: uppercase;
+    margin-top: 165px;
+    line-height: 90px;
+  }
+
+  @include e(text) {
+    font-family: $Lato;
+    font-weight: $thinFontWeight;
+    font-size: rem(22px);
+    color: $white;
+    padding-bottom: 70px;
+  }
+
+  @include e(more) {
+    font-family: $Lato;
+    font-size: rem(18px);
+    color: $white;
+    transition: all 1s;
+
+    &:hover {
+      font-size: rem(24px);
+    }
+    &:focus {
+      font-size: rem(24px);
+    }
+  }
+
+  @include e(img) {
+    flex: 0 0 50%;
+    position: relative;
+    bottom: -4px;
+    text-align: center;
+    margin-top: 75px;
+  }
+}

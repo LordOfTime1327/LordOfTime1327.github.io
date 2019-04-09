@@ -1,0 +1,137 @@
+.block2 {
+  background: url(../i/bg_bottom.jpg) no-repeat;
+  background-size: cover;
+}
+
+.form-block {
+  @include e(title) {
+    font-family: $Raleway;
+    font-weight: $boldFontWeight;
+    font-size: 35px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding-top: 117px;
+    padding-bottom: 70px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 2px;
+      background: white;
+      margin: auto;
+      margin-top: 50px;
+    }
+  }
+}
+
+.nets {
+  @include display(flex);
+  @include justify-content(center);
+
+  @include e(img) {
+    margin-right: 20px;
+    margin-bottom: 50px;
+    transition: all 1s;
+
+    &:hover {
+      transform: scale(1.5);
+    }
+
+    &:focus {
+      transform: scale(1.5);
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  @include e(link) {
+    width: 25px;
+    height: 32px;
+    fill: white;
+  }
+}
+
+.form {
+  padding: 0 250px;
+
+  @include display(flex);
+  @include flex-wrap(wrap);
+  @include justify-content(space-between);
+
+  @include e(name) {
+    font-family: $Lato;
+    box-sizing: border-box;
+    flex: 0 0 47%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 20px 25px;
+    color: #fff;
+  }
+
+  @include e(email) {
+    font-family: $Lato;
+    box-sizing: border-box;
+    flex: 0 0 47%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 20px 25px;
+    color: #fff;
+  }
+
+  @include e(message) {
+    font-family: $Lato;
+    box-sizing: border-box;
+    flex: 0 0 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 20px 25px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: #fff;
+  }
+
+  @include e(send) {
+    font-family: $Lato;
+    display: block;
+    margin: auto;
+    background: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+    font-family: Ubuntu, sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 15px 60px;
+    margin-bottom: 90px;
+    cursor: pointer;
+    transition: all 1s;
+
+    &:hover {
+      background: #fff;
+      color: #000;
+      border-color: #000;
+    }
+
+    &:focus {
+      background: #fff;
+      color: #000;
+      border-color: #000;
+    }
+  }
+}
+
+input[placeholder] {
+  color: #fff;
+  font-family: Ubuntu, sans-serif;
+  font-style: italic;
+}
+input:focus {
+  outline: none;
+}

@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @include display(flex);
+  @include flex-direction(column);
+  min-height: 100vh;
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.container_main {
+  flex: 1;
+}
+.container-top {
+  order: -1;
+}
