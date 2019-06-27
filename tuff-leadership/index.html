@@ -14,7 +14,7 @@
       
       <div class="container container_double">
         <div class="registration">
-          <a href="#" class="registration__link">Registration</a>
+          <a href="#registration" class="registration__link">Registration</a>
         </div>
 
        
@@ -56,7 +56,7 @@
     <section class="wrapper">
       <div class="container second-container">
           <div class="registration">
-            <a href="#" class="registration__link">Registration</a>
+            <a href="#registration" class="registration__link">Registration</a>
           </div>
         
 
@@ -123,7 +123,7 @@
               <img src="i/tuff.png" class="tuffLogo" alt="" />
             </a>
             <div class="registration registration_third">
-              <a href="#" class="registration__link">Registration</a>
+              <a href="#registration" class="registration__link">Registration</a>
             </div>
           </div>
 
@@ -198,7 +198,7 @@
               <img src="i/tuff.png" class="tuffLogo" alt="" />
             </a>
             <div class="registration registration_third">
-              <a href="#" class="registration__link">Registration</a>
+              <a href="#registration" class="registration__link">Registration</a>
             </div>
           </div>
 
@@ -264,7 +264,7 @@
                   <img src="i/tuff.png" class="tuffLogo" alt="" />
                 </a>
                 <div class="registration registration_third">
-                  <a href="#" class="registration__link">Registration</a>
+                  <a href="#registration" class="registration__link">Registration</a>
                 </div>
               </div>
               <div class="date">
@@ -317,7 +317,7 @@
                   <img src="i/tuff.png" class="tuffLogo" alt="" />
                 </a>
                 <div class="registration registration_third">
-                  <a href="#" class="registration__link">Registration</a>
+                  <a href="#registration" class="registration__link">Registration</a>
                 </div>
               </div>
             </div>         
@@ -423,15 +423,20 @@
                
         
                 <div class="footer__formBox">
+
+                  <a name="registration"></a>
+
                   <p class="footer__formCaption">Get in touch</p>
-                  <form class="footerForm" action="">
-                    <input type="text" class="footerForm__item footerForm__item_name" placeholder="Your Name">
-                    <input type="email" class="footerForm__item footerForm__item_email" placeholder="Your e-mail">
-                    <input type="text" class="footerForm__item footerForm__item_msg" placeholder="Your message">
+
+                  <form class="footerForm" action="sendEmail.php" method="post">
+                    <input name="name" type="text" class="footerForm__item footerForm__item_name" placeholder="Your Name">
+                    <input name="email" type="email" class="footerForm__item footerForm__item_email" placeholder="Your e-mail">
+                    <input name="message" type="text" class="footerForm__item footerForm__item_msg" placeholder="Your message">
                     
                     <button type="submit" class="footerForm__submit">Send</button>
         
                   </form>
+
                 </div>
                </footer>
 
