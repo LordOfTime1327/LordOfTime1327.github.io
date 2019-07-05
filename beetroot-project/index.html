@@ -9,8 +9,7 @@
   </head>
   <body>
 
-    <a name="top"></a>
-    <section class="wrapper wrapper_double">
+    <section id="top" class="wrapper wrapper_double">
       
       <div class="container container_double">
         <div class="registration">
@@ -52,8 +51,7 @@
       </div>
     </section>
 
-    <a name="second"></a>
-    <section class="wrapper">
+    <section class="wrapper" id='second'>
       <div class="container">
           <div class="registration">
             <a href="#registration" class="registration__link">Registration</a>
@@ -112,8 +110,7 @@
         </div>
       </section>
 
-    <a name="approach"></a>
-    <section class="wrapper wrapper_double">
+    <section class="wrapper wrapper_double" id="approach">
       <div class="container container_normal container_milk">
 
         <div class="header header_orange">
@@ -189,8 +186,7 @@
       </div>
     </section>
 
-    <a name="coach"></a>
-    <section class="wrapper wrapper_milk">
+    <section class="wrapper wrapper_milk" id="coach">
       <div class="container container_milk">
         <div class="header">
           <div class="title">
@@ -255,8 +251,7 @@
       </div>
     </section>
 
-    <a name="discover"></a>
-    <section class=" wrapper wrapper_milk">
+    <section class=" wrapper wrapper_milk" id="discover">
       <div class="container">
           <div class="header">
               <div class="title">
@@ -325,8 +320,7 @@
           </div>
     </section>
 
-    <a name="testimonials"></a>
-    <section class="wrapper wrapper_milk">
+    <section class="wrapper wrapper_milk" id="testimonials">
       <div class="container">
           
           <div class="header">
@@ -400,11 +394,8 @@
                 </div>
               </div>
 
-
-    <a name="contact"></a>
-  
              <footer class="footer">
-                <div class="footer__contact">
+                <div id="contact" class="footer__contact">
                   <div class="contact">
                     <span class="contact__caption">contact</span>
                     <address class="contact__item">Kyiv, UBI Conference Hall</address>
@@ -444,17 +435,13 @@
                   <p class="footer__formCaption">Get in touch</p>
 
                   <form class="footerForm" action="sendEmail.php"  method="post">
-                    <input name="name" type="text" id="formName" class="footerForm__item footerForm__item_name" placeholder="Your Name" required>
-                    <input name="email" type="email" id="formEmail" class="footerForm__item footerForm__item_email" placeholder="Your e-mail" required>
+                    <input name="name" type="text" id="formName" class="footerForm__item footerForm__item_name" placeholder="Your Name" required autocomplete="off">
+                    <input name="email" type="email" id="formEmail" class="footerForm__item footerForm__item_email" placeholder="Your e-mail" required autocomplete="nope">
                     <input name="message" type="text" class="footerForm__item footerForm__item_msg" placeholder="Your message">
-                    
                     <button type="submit" class="footerForm__submit">Send</button>
-        
                   </form>
-
                 </div>
                </footer>
-
            </div>
       </div>
     </section>
@@ -472,7 +459,6 @@
           <div class="menuBlock__item">
           
             <div class="menuBlock__caption">menu</div>
-          
               <menu class="menuBox">
                 <menuitem><a href="#top" class="menuBox__link">Home</a></menuitem>
                 <menuitem><a href="#approach" class="menuBox__link">Approach</a></menuitem>
@@ -480,7 +466,6 @@
                 <menuitem><a href="#testimonials" class="menuBox__link">Testimonials</a></menuitem>
                 <menuitem><a href="#contact" class="menuBox__link menuBox__link_last">Contact</a></menuitem>
               </menu>
-
             </div>
 
           <div class="details">
