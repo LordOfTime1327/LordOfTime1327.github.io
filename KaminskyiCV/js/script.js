@@ -1,1 +1,0 @@
-let body=$("body"),burger=$("#burger"),nav=$("#nav"),close=$(".close");burger.click(l=>{burger.toggleClass("close"),nav.toggleClass("active"),body.toggleClass("stop-scrolling")});
