@@ -57,7 +57,6 @@
             <a href="#registration" class="registration__link">Registration</a>
           </div>
         
-
           <div class="main">
             <div class="text">
               <p class="text__title">
@@ -108,7 +107,7 @@
               <embed src="i/logo.svg" type="">
           </div>          
         </div>
-      </section>
+    </section>
 
     <section class="wrapper wrapper_double" id="approach">
       <div class="container container_normal container_milk">
@@ -126,17 +125,18 @@
 
        
 
-        <section class="video">
+       <section class="video">
           <span class="video__caption">
             App roach <span class="video_dot"></span>
           </span>
-          <video src="#" controls="controls" class="video__box"></video>
-         
+          <div class="video__wrapper">
+            <iframe class="video__box" src="https://www.youtube.com/embed/DTH4krk8p-I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div> 
         </section>
 
         </div>
         </div>
-      </section>
+    </section>
 
     <section class="wrapper_milk">
       <div class="container container_normal container_milk">
@@ -206,18 +206,18 @@
         </div>
 
         <div class="coaches">
-          <div class="coaches__item coaches_first">
+          <div class="coaches__item">
             <div class="photo">
-              <img src="i/coach-one.png" alt="" class="photo__img-one" />
-              <img src="i/dots.png" alt="" class="photo__dots">
+              <img src="i/coach-one.png" alt="" class="photo__img" />
+              <!--<img src="i/dots.png" alt="" class="photo__dots">-->
             </div>
-            <div class="text">
-              <p class="text__name">
-                <span >
+            <div class="coachText">
+              <p class="coachText__name">
+                <!-- <span >
                     <embed class="text__snake" src="i/snake.svg" type="">
-
-                </span> Lisa Grill</p>
-              <p class="text__info">
+                </span> -->
+                Lisa Grill</p>
+              <p class="coachText__info">
                 Lisa is an experienced Tuff coach and trainer with a background
                 in learning and development. Her specialism is self-managing
                 teams and organisations and she writes for publications like the
@@ -227,16 +227,16 @@
               </p>
             </div>
           </div>
-
-          <div class="coaches__item coaches_second">
-            <div class="photo photo_right">
-              <img src="i/coach-two.png" alt="" class="photo__img-two" />
-              <img src="i/stripes.png" alt="" class="photo__stripes">
+          
+          <div class="coaches__item">
+            <div class="photo">
+              <img src="i/coach-two.png" alt="" class="photo__img" />
+              <!--<img src="i/----stripes.png" alt="" class="photo__stripes">-->
             </div>
-            <div class="text text_left">
-              <p class="text__name">
+            <div class="coachText coachText_left">
+              <p class="coachText__name">
                 Vera Budean</p>
-              <p class="text__info text__info_left">
+              <p class="coachText__info coachText__info_left">
                 Vera is a change facilitator and training consultant with 10+
                 years experience in multi-cultural environments with leading
                 international organisations. She mainly works with tech
@@ -340,7 +340,6 @@
 
                <div class="testimonials-box__item">
                  <div class="flag">
-                  <img src="i/whiteDots.png" alt="" class="testimonials-box__dots">
                    <embed src="i/britain.svg" type="" class="testimonials-box__flag">
                  </div>
                  <div class="testimonialsText">
@@ -353,8 +352,6 @@
 
                <div class="testimonials-box__item">
                   <div class="flag">
-                  <img src="i/whiteDots.png" alt="" class="testimonials-box__dots">
-
                     <embed src="i/sweden.svg" type="" class="testimonials-box__flag">
                   </div>
                   <div class="testimonialsText">
@@ -368,8 +365,6 @@
 
                 <div class="testimonials-box__item">
                     <div class="flag">
-                      <img src="i/whiteDots.png" alt="" class="testimonials-box__dots">
-
                       <embed src="i/portugal.svg" type="" class="testimonials-box__flag">
                     </div>
                     <div class="testimonialsText">
@@ -382,10 +377,12 @@
                     </div>
                   </div>
                
-             </div>
+              </div>
 
-             <div class="sony">
-                <img src="i/sony.png" alt="" class="sony__img">
+              <div class="sony">
+                <div class="sony__imgBox">
+                  <img src="i/sony.png" alt="" class="sony__img">
+                </div>
                 <div class="sony-info">
                   <p class="sony-info__caption">Eva Lorentzon, 
                       formerly Learning & Development Specialist at Sony Mobile
@@ -428,16 +425,16 @@
                   </div>
                 </div>
         
-                <div class="footer__formBox">
+                <div class="footer__formBox" id='registration'>
 
-                  <a name="registration"></a>
+                  <!--<a name="registration"></a>-->
 
                   <p class="footer__formCaption">Get in touch</p>
 
                   <form class="footerForm" action="sendEmail.php"  method="post">
                     <input name="name" type="text" id="formName" class="footerForm__item footerForm__item_name" placeholder="Your Name" required autocomplete="off">
                     <input name="email" type="email" id="formEmail" class="footerForm__item footerForm__item_email" placeholder="Your e-mail" required autocomplete="nope">
-                    <input name="message" type="text" class="footerForm__item footerForm__item_msg" placeholder="Your message">
+                    <input name="message" type="text" class="footerForm__item footerForm__item_msg" placeholder="Your message" autocomplete="off">
                     <button type="submit" class="footerForm__submit">Send</button>
                   </form>
                 </div>
