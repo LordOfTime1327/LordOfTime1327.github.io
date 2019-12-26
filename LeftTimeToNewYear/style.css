@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img1 {
+  display: block;
+  width: 50%;
+  height: 30%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.img2 {
+  display: block;
+  width: 50%;
+  height: 40%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+.bg {
+  z-index: 0;
+  animation: color 20s ease-in-out infinite;
+}
+@keyframes color {
+  0% {
+    background-color: #ff0000;
+  }
+  13% {
+    background-color: #ffa500;
+  }
+  36% {
+    background-color: #ffff00;
+  }
+  49% {
+    background-color: #008000;
+  }
+  62% {
+    background-color: #0000ff;
+  }
+  75% {
+    background-color: #000080;
+  }
+  88% {
+    background-color: #800080;
+  }
+  100% {
+    background-color: #ff0000;
+  }
+}
+
+.wrapper {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 15px;
+  /*border: 1px solid #ccc;*/
+  border-radius: 15px;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+
+  z-index: 1;
+}
+
+.newYear {
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+
+  line-height: 0.8;
+
+  text-align: center;
+
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.newYear_date {
+  font-family: Arial, sans-serif;
+
+  display: block;
+  font-size: 67px;
+  text-transform: uppercase;
+}
+.newYear_year {
+  font-family: Arial, sans-serif;
+
+  display: block;
+  font-size: 55px;
+  text-transform: uppercase;
+}
+
+.counter {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.counter_block {
+  width: 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+.counter_block:last-of-type {
+  margin-bottom: 0;
+}
+
+.time {
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+
+  padding-bottom: 5px;
+}
+.text {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .img1 {
+    width: 40%;
+    height: 70%;
+  }
+  .img2 {
+    width: 30%;
+    height: 70%;
+  }
+  .newYear {
+    font-size: 52px;
+    line-height: 1;
+  }
+  .newYear_date {
+    display: inline;
+    font-size: 60px;
+  }
+  .newYear_year {
+    display: inline;
+    font-size: 60px;
+  }
+  .counter {
+    flex-flow: row nowrap;
+  }
+  .counter_block {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+  .counter_block:last-of-type {
+    margin-right: 0;
+  }
+}
