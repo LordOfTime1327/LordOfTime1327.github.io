@@ -1,4 +1,4 @@
-let newYearDate = new Date("Jan 1, 2020").getTime();
+let newYearDate = new Date("Jan 1, 2020 00:00");
 
 function leftTimeToNewYear() {
   let nowTime = new Date().getTime(),
@@ -36,6 +36,22 @@ function leftTimeToNewYear() {
   secondsLeft == 1
     ? (textSec.innerHTML = "Second")
     : (textSec.innerHTML = "Seconds");
+
+  let wrapper = document.getElementById("wrapper"),
+    hny = document.getElementById("hny");
+  if (daysLeft == 0 && hoursLeft == 0 && minutesLeft == 0 && secondsLeft == 0) {
+    wrapper.style = "display: none;";
+    hny.style = "display: block;";
+    newYearDate.setFullYear(newYearDate.getFullYear() + 1);
+  } else if (
+    daysLeft == 365 &&
+    hoursLeft == 23 &&
+    minutesLeft == 0 &&
+    secondsLeft == 0
+  ) {
+    hny.style = "display: none;";
+    wrapper.style = "display: block;";
+  }
 }
 
 setInterval(() => {

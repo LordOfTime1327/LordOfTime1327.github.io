@@ -13,6 +13,65 @@ body {
   align-items: center;
 }
 
+.hny {
+  display: none;
+
+  font-family: Arial, sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  text-transform: uppercase;
+  z-index: 1;
+
+  background: -webkit-linear-gradient(
+    left,
+    #ff0000,
+    #ffa500,
+    #ffff00,
+    #008000,
+    #0000ff,
+    #000080,
+    #800080,
+    #ff0000
+  );
+  background-position: 3000px 0;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 2px black;
+  animation: textGradient 8s linear infinite forwards,
+    textPulse 3s ease-in-out infinite;
+}
+@keyframes textGradient {
+  0% {
+    background-position: 0 3000px;
+  }
+  100% {
+    background-position: 3000px 0;
+  }
+}
+@keyframes textPulse {
+  0% {
+    transform: scale(0) rotate(360deg);
+  }
+  30% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.9);
+  }
+  70% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0) rotate(360deg);
+  }
+}
+
 .img1 {
   display: block;
   width: 50%;
@@ -40,6 +99,9 @@ body {
 .bg {
   z-index: 0;
   animation: color 20s ease-in-out infinite;
+
+  background: url(img/bg.png) 0 0 / 70% 40% no-repeat,
+    url(img/bg3.png) 130% 100% / 70% 50% no-repeat;
 }
 @keyframes color {
   0% {
@@ -143,6 +205,10 @@ body {
   .img2 {
     width: 30%;
     height: 70%;
+  }
+  .bg {
+    background: url(img/bg.png) 0 0 / 40% 60% no-repeat,
+      url(img/bg3.png) 105% 100% / 30% 70% no-repeat;
   }
   .newYear {
     font-size: 52px;
