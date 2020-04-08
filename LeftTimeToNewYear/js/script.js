@@ -1,4 +1,9 @@
-let newYearDate = new Date("Jan 1, 2020 00:00");
+let year = new Date().getFullYear() + 1,
+  date = "Jan 1, " + year + " 00:00";
+let newYearDate = new Date(date);
+
+newYearDateHTML = document.getElementById("newYearDate");
+newYearDateHTML.innerHTML = year;
 
 function leftTimeToNewYear() {
   let nowTime = new Date().getTime(),
@@ -47,7 +52,7 @@ function leftTimeToNewYear() {
     daysLeft == 365 &&
     hoursLeft == 23 &&
     minutesLeft == 0 &&
-    secondsLeft == 0
+    secondsLeft == 40
   ) {
     hny.style = "display: none;";
     wrapper.style = "display: block;";
