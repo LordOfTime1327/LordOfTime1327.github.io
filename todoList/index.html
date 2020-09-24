@@ -3,49 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>toDoList</title>
+    <title>todoList</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header__logoBox">
-          <h1 class="logo">ToDo List</h1>
+          <h1 class="header__logo">ToDo List</h1>
         </div>
-        <div class="header__menuBox">
-          <!-- 
-            -- тут сделать иконки расположения 
-               плиточного или строкового вида
-            -- инфо
-           -->
-        </div>
+        <div class="header__menuBox"></div>
       </div>
     </header>
 
-    <section class="formBox">
+    <section class="controllBox">
       <div class="container">
-        <form action="" class="form">
-          <input type="text" placeholder="Enter text" class="form__input" />
-          <input type="submit" value="Add" class="form__submit" />
+        <form action="" class="controll">
+          <div class="controll__addBox">
+            <input type="text" class="controll__addInput" />
+            <button class="controll__addBtn">Add</button>
+          </div>
+
+          <div class="controll__btnBox">
+            <button class="checkAll">Check All</button>
+            <button class="importantAll">Important All</button>
+            <button class="deleteAll">Delete All</button>
+            <button class="deleteChecked">Delete Checked</button>
+          </div>
         </form>
       </div>
     </section>
 
-    <!-- 
-      -- сделать кнопки 'Check all' 
-                      & 'Delete All' 
-                      & 'Importamt all'
-    -->
-
-    <section class="toDoListBox">
+    <section class="todoListBox">
       <div class="container">
-        <ul class="toDoList">
-          <!-- 
-              -- сделать крестик для удаления
-              -- сделать важным по нажатию на кнопку с ! знаком
-              -- при выполненом перечеркаивать текст 
-             -->
-        </ul>
+        <ul class="todoList"></ul>
       </div>
     </section>
 
@@ -60,8 +51,6 @@
         </div>
       </div>
     </footer>
-
-    <!-- <div class="test"><button class="btn">test</button></div> -->
 
     <script src="js/script.js"></script>
   </body>
