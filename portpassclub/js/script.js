@@ -1,0 +1,1 @@
+let burger=document.querySelector(".burger"),nav=document.querySelector(".nav");burger.addEventListener("click",function(){burger.classList.contains("close")?(burger.classList.remove("close"),nav.style.display="none"):(burger.classList.add("close"),nav.style.display="block")});
